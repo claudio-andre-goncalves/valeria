@@ -37,6 +37,13 @@ body {
     line-height: 1.6;
 }
 
+.mt-3 { margin-top: 3rem; }
+.mt-4 { margin-top: 4rem; }
+
+.color-gold {
+    color: var(--gold-light);
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -451,6 +458,11 @@ details p,
     color: var(--muted);
 }
 
+.offer-copy p.color-gold {
+    color: var(--gold-light);
+    font-size: 1rem;
+}
+
 .dark-panel-section {
     padding-top: 32px;
 }
@@ -497,6 +509,7 @@ details p,
     grid-template-columns: 1.15fr 0.85fr;
     grid-template-rows: auto auto;
     gap: 24px;
+    margin-bottom: 20px;
 }
 
 .included-card {
@@ -509,9 +522,12 @@ details p,
 }
 
 .included-card.main-product {
-    grid-row: span 3;
+    grid-row: span 2;
     grid-template-columns: 1fr;
     align-items: start;
+}
+.included-card.big-with-image {
+    grid-template-columns: 1fr 700px;
 }
 
 .included-image {
@@ -527,8 +543,8 @@ details p,
 }
 
 .main-product .included-image img {
-    max-height: 800px;
-    object-position: top center;
+    max-height: 450px;
+    object-position: center center;
 }
 
 .small-image {
